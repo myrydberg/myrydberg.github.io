@@ -761,3 +761,16 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #426321;
 }
+
+
+/* Added by me */
+
+
+hr {
+    max-width: 50px;
+    border-color: rgb(0,188,217);
+    border-width: 3px;
+}
+.light {
+    border-color: #426321;
+}
