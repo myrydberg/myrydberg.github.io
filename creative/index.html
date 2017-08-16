@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>My</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+
+    <!-- CSS d3.js -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">My</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <!--li>
+                        <a class="page-scroll" href="#cv">CV</a>
+                    </li-->
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#commitments">Commitments</a>
+                    </li> -->
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">My Rydberg</h1>
+                <!--hr>
+                <p>Hardworking and creative student</p-->
+                <p></p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">
+                    <i class="fa fa-angle-down fa-2x" aria-hidden="true"> </i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Creative and hardworking student</h2>
+                    <hr>
+                    <p>I'm currently in my forth year of my M.Sc. in Media Technology at Linköping's University. Where my studies have become focused around imageprocessing and information visualisation. </p>
+                    <div id='dashboard'></div>
+                    <p>Take a look around and feel free to contact me if you find anything interesting! </p>
+                    <!--a href="#cv" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <div  class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-fake1">
+                            <div class="portfolio-box-fake2">
+                                <div class="col-lg-12 text-center">
+                                    <h2 class="section-heading">Portfolio</h2>
+                                    <hr class="light">
+                                    <p>Projects I've been a part of.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!--a href="SGCT_project" class="portfolio-box"-->
+                    <a href="" data-target="#SGCT_project" class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/thumbnails/SGCT.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    3D Computer Graphics
+                                </div>
+                                <div class="project-name">
+                                    A dry sea
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="" data-target="#bechdel" class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/thumbnails/bechdel2.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Information visualisation
+                                </div>
+                                <div class="project-name">
+                                    The bechdel test
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/logotyp.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Commitment
+                                </div>
+                                <div class="project-name">
+                                    aHead mattecoachning
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Commitment
+                                </div>
+                                <div class="project-name">
+                                    Media Technology Days
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="" data-target="#gdk"class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/thumbnails/sekel.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Graphic Design and Communication
+                                </div>
+                                <div class="project-name">
+                                    Sekel
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="" data-target="#gdk"class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/thumbnails/bowling.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Modelling project
+                                </div>
+                                <div class="project-name">
+                                    Bowling
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="" data-target="#gdk"class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/thumbnails/photo.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Interests
+                                </div>
+                                <div class="project-name">
+                                    Photography
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="" data-target="#gdk"class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Graphic Design and Communication
+                                </div>
+                                <div class="project-name">
+                                    Sekel
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--     <section  id="statistis">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div id="stat1" style="height: 40vh">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section> -->
+
+<!--     <section id="commitments">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="section-heading">Commitments</h1>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box">
+                    <img src="img/commitments/ahead.png" onmouseover="this.src='img/commitments/ahead.png'" onmouseout="this.src='img/commitments/ahead.png'" class="img-circle img-50" width="50%">
+                        <h3>aHead mattecoachning</h3>
+                        <p class="text-muted">2014-2016</p>
+                        <p>Math coach &amp; Coordinator.</p>
+                        <a href="#ahead" class="portfolio-box" data-toggle="modal">Read more...</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box">
+                    <img src="img/commitments/mtd.png" onmouseover="this.src='img/commitments/mee.jpg'" onmouseout="this.src='img/commitments/mtd.png'" class="img-circle img-50" width="50%" >
+                        <h3>Media Technology Days</h3>
+                        <p class="text-muted">2016-2017</p>
+                        <p>Lecture Coordinator</p>
+                        <a href="#mtd" class="portfolio-box" data-toggle="modal">Read more...</a>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section> -->
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Free Download at Start Bootstrap!</h2>
+                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
+            </div>
+        </div>
+    </aside>
+
+<!--     <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>123-456-6789</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <div class="modal fade" id="SGCT_project" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">
+                        ×</span>
+                    </button>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                                <!-- Project Details Go Here -->
+                                <h2>A dry sea</h2>
+                                <hr>
+                                <p class="item-intro text-muted">Real-time animation in OpenGL and SGCT</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/fullsize/SGCT.png" alt="">
+                                
+                                <p>"A dry sea" is a virtual ocean with killer whales, manatees and goldfishes. The animation is created for imersive environments using OpenGL and tools for stereo video.</p>
+                                <p></p>
+                                <ul class="list-inline">
+                                    <li>Date: May 2015</li>
+                                    <li>Course: 3D Computer Graphics</li>
+                                    <li>Techniques used: C++, OpenGL, SGCT</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bechdel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">
+                        ×</span>
+                    </button>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">The bechdel test</h2>
+                            <hr>
+                            <p class="item-intro text-muted">Visualising and analysing data</p>
+                            <img src="img/portfolio/fullsize/bechdel.png" alt="" >
+                        
+                            <p> The purpose of the project was to visulise how films through the years have passed the bechdel test. The test serves to differenciate between films worthy of watching from films lacking good female representation. </p>
+
+                            <p>We used two data sets, one containing the results from the bechdeltest and the other from IMDb with information about grossings, score and actors. The later was used to give more context to the results from the test. </p>
+
+                            <p>The full application can be found at <a href="../TNM048/index.html" target="_blank">the Bechdel test</a>. </p>
+                            <ul class="list-inline">
+                                <li>Date: March 2017</li>
+                                <li>Course: TNM048 - Information visualisation</li>
+                                <li>Techniques used: html, javascript, D3.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="gdk" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">
+                        ×</span>
+                    </button>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Sekel</h2>
+                            <hr>
+                            <p class="item-intro text-muted">Graphics Manual and Branding</p>
+                            <img src="img/portfolio/fullsize/gdk.png" alt="" width="70%">
+                        
+                            <p>At the base of the project  </p>
+
+                            <p>We used two data sets, one containing the results from the bechdeltest and the other from IMDb with information about grossings, score and actors. The later was used to give more context to the results from the test. </p>
+
+                            <p>More information about the final product can be found in <a href="pdf/grafiskmanual.pdf" target="_blank">the Graphics Manual</a>. </p>
+                            <ul class="list-inline">
+                                <li>Date: December 2016</li>
+                                <li>Course: TNM069 - Graphic design and communication</li>
+                                <li>Techniques used: Illustrator, InDesign, Photoshop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+    <!--modules d3.js-->
+    <script src="js/d3.min.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/dashboard2.js"></script>
+    <script src="js/skill.js"></script>    
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
